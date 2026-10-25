@@ -36,6 +36,11 @@ export const GLOWUPS = {
   on: 'Glow-up: draw this exact person as the most attractive, heroic version of themselves, like the handsome lead of an animated film: ' +
     'confident charming smile, bright eyes, clear glowing skin, defined jaw and cheekbones, healthy styled hair with the same texture and color, ' +
     'fit athletic build and flattering hero lighting. Enhance, never replace: the face, glasses and hair must still be instantly recognizable as them.',
+  model: 'Max glow-up: draw this exact person as a strikingly handsome fashion-model version of themselves, magazine-cover attractive: ' +
+    'a broad, square face with a wide, strong, squared-off jawline and square chin (not narrow, oval or pointed), ' +
+    'chiseled cheekbones, smoldering confident expression with a slight smirk, flawless glowing skin, light stubble, ' +
+    'voluminous perfectly styled hair with the same curl pattern and color, broad shoulders and a lean muscular build, ' +
+    'glamorous rim lighting. Enhance, never replace: the face, glasses and hair must still be instantly recognizable as them.',
 };
 
 // The caption on each generated image is exactly the `spec` string below.
