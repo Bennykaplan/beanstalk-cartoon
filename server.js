@@ -50,12 +50,12 @@ function parseDataUrl(dataUrl) {
 function parseSettings(s = {}) {
   const pick = (table, value, fallback) => (Object.hasOwn(table, value) ? value : fallback);
   return {
-    style: pick(STYLES, s.style, 'pixar'),
+    style: pick(STYLES, s.style, 'anime'),
     exaggeration: pick(EXAGGERATION, String(s.exaggeration), '1'),
     palette: pick(PALETTES, s.palette, 'vibrant'),
     outline: pick(OUTLINES, s.outline, 'thin'),
-    outfit: pick(OUTFITS, s.outfit, 'jack'),
-    glowup: pick(GLOWUPS, s.glowup, 'on'),
+    outfit: pick(OUTFITS, s.outfit, 'own'),
+    glowup: pick(GLOWUPS, s.glowup, 'model'),
   };
 }
 
