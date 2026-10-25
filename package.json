@@ -1,0 +1,16 @@
+{
+  "name": "beanstalk-cartoon",
+  "version": "1.0.0",
+  "description": "Upload a photo, cartoonify it, and drop yourself into Jack and the Beanstalk.",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
