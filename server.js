@@ -55,7 +55,7 @@ function parseSettings(s = {}) {
     palette: pick(PALETTES, s.palette, 'vibrant'),
     outline: pick(OUTLINES, s.outline, 'thin'),
     outfit: pick(OUTFITS, s.outfit, 'own'),
-    glowup: pick(GLOWUPS, s.glowup, 'model'),
+    glowup: pick(GLOWUPS, s.glowup, 'off'),
   };
 }
 

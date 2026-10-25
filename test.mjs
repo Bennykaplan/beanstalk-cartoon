@@ -4,7 +4,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 
 const [photoPath, style = 'storybook', glowup = 'off'] = process.argv.slice(2);
-const base = `http://localhost:${process.env.PORT || 3010}`;
+const base = process.env.BASE || `http://localhost:${process.env.PORT || 3010}`;
 const name = `${path.parse(photoPath).name}-${style}${glowup === 'on' ? '-glowup' : ''}`;
 const ext = path.extname(photoPath).slice(1).replace('jpg', 'jpeg');
 const photo = `data:image/${ext};base64,${fs.readFileSync(photoPath).toString('base64')}`;
