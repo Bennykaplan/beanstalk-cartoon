@@ -31,6 +31,13 @@ export const OUTFITS = {
   own: 'Keep the clothing from the photo, redrawn in the cartoon style.',
 };
 
+export const GLOWUPS = {
+  off: 'Do not beautify, slim, age, de-age or add features that are not in the photo.',
+  on: 'Glow-up: draw this exact person as the most attractive, heroic version of themselves, like the handsome lead of an animated film: ' +
+    'confident charming smile, bright eyes, clear glowing skin, defined jaw and cheekbones, healthy styled hair with the same texture and color, ' +
+    'fit athletic build and flattering hero lighting. Enhance, never replace: the face, glasses and hair must still be instantly recognizable as them.',
+};
+
 // The caption on each generated image is exactly the `spec` string below.
 export const SCENES = {
   planting: {
@@ -56,11 +63,10 @@ const IDENTITY_RULES =
   'hairline, hairstyle, hair length, hair color and texture, skin tone, facial hair or lack of it, freckles, moles, ' +
   'apparent age and gender (an adult keeps adult facial proportions and never looks like a child or teenager). Keep eyebrow thickness and darkness as in the photo. ' +
   'If the person wears glasses, copy the exact frame shape, thickness, material and color ' +
-  '(clear plastic frames stay clear and thick, not thin wire). ' +
-  'Do not beautify, slim, age, de-age or add features that are not in the photo.';
+  '(clear plastic frames stay clear and thick, not thin wire).';
 
 export function styleLine(s) {
-  return `Art style: ${STYLES[s.style]}, ${PALETTES[s.palette]}, ${OUTLINES[s.outline]}. ${EXAGGERATION[s.exaggeration]}`;
+  return `Art style: ${STYLES[s.style]}, ${PALETTES[s.palette]}, ${OUTLINES[s.outline]}. ${EXAGGERATION[s.exaggeration]} ${GLOWUPS[s.glowup]}`;
 }
 
 export function cartoonifyPrompt(s) {

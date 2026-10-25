@@ -92,6 +92,12 @@
           <option value="own">Keep my clothes</option>
         </select>
       </label>
+      <label>Glow-up
+        <select id="glowup">
+          <option value="off">Off (true to life)</option>
+          <option value="on">On (movie-star version)</option>
+        </select>
+      </label>
     </div>
     <div class="row">
       <div>
@@ -116,7 +122,7 @@ const EX = { 1: 'Subtle', 2: 'Moderate', 3: 'Bold' };
 
 const settings = () => ({
   style: $('style').value, exaggeration: $('exaggeration').value,
-  palette: $('palette').value, outline: $('outline').value, outfit: $('outfit').value,
+  palette: $('palette').value, outline: $('outline').value, outfit: $('outfit').value, glowup: $('glowup').value,
 });
 $('exaggeration').oninput = () => { $('exLabel').textContent = EX[$('exaggeration').value]; };
 

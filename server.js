@@ -2,7 +2,7 @@ import express from 'express';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import {
-  STYLES, EXAGGERATION, PALETTES, OUTLINES, OUTFITS, SCENES,
+  STYLES, EXAGGERATION, PALETTES, OUTLINES, OUTFITS, GLOWUPS, SCENES,
   cartoonifyPrompt, scenePrompt,
 } from './prompts.js';
 
@@ -55,6 +55,7 @@ function parseSettings(s = {}) {
     palette: pick(PALETTES, s.palette, 'vibrant'),
     outline: pick(OUTLINES, s.outline, 'thin'),
     outfit: pick(OUTFITS, s.outfit, 'jack'),
+    glowup: pick(GLOWUPS, s.glowup, 'off'),
   };
 }
 
